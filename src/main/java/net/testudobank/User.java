@@ -57,7 +57,25 @@ public class User {
 
   @Setter @Getter @Positive
   private double amountToSellCrypto;
+
+  @Setter @Getter
+  private String cryptoHist;
   
+  @Setter @Getter
+  private boolean isCrypto;
+
+  @Setter @Getter @Positive
+  private double totalEthHoldingsCoins;
+
+  @Setter @Getter @Positive
+  private double totalEthHoldingsDollars;
+
+  @Setter @Getter @Positive
+  private double ethPrice;
+
+
+
+
 	@Override
 	public String toString() {
 		return "User [username=" + username + ", password=" + password + ", balance=" + balance + "]";
